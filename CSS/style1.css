@@ -1,0 +1,1149 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+main{
+    min-width: 800px;
+    background-color: rgba(128, 128, 128, 0.147);
+}
+
+/* Header portion styling starts */
+
+header{
+    min-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10%;
+    align-items: center;
+    background-color: white;
+    
+}
+.logo
+{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+.logo>span{
+    color: orangered;
+
+}
+
+.top-center{
+    text-decoration: none;
+    color: #2F4858;
+}
+.top2{
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 25px;
+
+}
+.top-left
+{
+    margin-left: 10px;
+    color: black;
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 3px;
+}
+.top-left:hover
+{
+    background-color: orangered;
+    color: white;
+}
+
+.top-center:hover
+{
+   color: orangered;
+
+}
+.visited:visited{
+    color: orangered;
+    
+}
+
+/* media query for header */
+
+
+ @media screen and (max-width:1305px) 
+{
+   header{
+    column-gap: 300px;
+   }
+    
+} 
+
+@media screen and (min-width:1200px) and (max-width:1305px) 
+{
+   header{
+    column-gap: 100px;
+   }
+
+    
+} 
+
+@media screen and (min-width:1000px) and (max-width:1200px) 
+{
+   header{
+    column-gap: 40px;
+    
+   }
+   .top2{
+
+    column-gap: 15px;
+
+}
+    
+} 
+@media screen and (min-width:840px) and (max-width:1000px) 
+{
+   header{
+    column-gap: 0px;
+    padding: 5%;
+
+   }
+   .top2{
+     column-gap: 15px;
+     
+
+}
+    
+} 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+   header{
+    flex-direction: column;
+    row-gap: 24px;
+   }
+    
+} 
+@media screen and (max-width:600px) 
+{
+   header{
+    flex-direction: column;
+    row-gap: 24px;
+    width: 100%;
+    margin: 0;
+   }
+   .top2{
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    }
+    .top2
+    {
+        background-color: #FFE6D6;
+        padding:5px 215px ;
+        
+    }
+    
+} 
+
+/* media query for header ends here */
+
+/* header styling ends here */
+
+
+
+
+/* banner styling starts here */
+.banner
+{
+    height: 300px;
+    width: 100%;
+    background: url(/Assets/image/banner-bg.webp);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-width: 800px;
+  
+   
+}
+.inbanner
+{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 50px;
+}
+.bantitle1
+{
+    color: orangered;
+
+}
+.bancontent
+{
+   width: 500px;
+   text-align: center;
+   
+}
+.button
+{
+    color: #2F4858;
+    text-decoration: none;
+    border: 2px solid #2F4858  ;
+    border-radius: 2px;
+    padding: 8px;
+    border-radius: 4px;
+}
+.button:hover{
+    background-color: #2F4858;
+    color: white;
+}
+/* banner styling ends here */
+
+
+
+
+.shape
+{
+    background-color: orangered;
+    clip-path: polygon(0 0,100% 0,90% 50%,100% 100%,0 100%,10% 50%,0 0);
+    padding:10px 20px ;
+    color: white;   
+
+}
+.grid-span-3
+{
+    grid-column: span 3;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+.grid-span-4
+{
+    grid-column: span 4;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+/* hover */
+
+.button1:hover,.button2:hover,.button3:hover,.button4:hover,.button5:hover{
+    background-color: #2F4858;
+    color: white;
+    
+}
+.outercontainer1:hover,.outercontainer2:hover,.outercontainer3:hover,.outercontainer4:hover,.outercontainer5:hover
+{
+    cursor: pointer;
+    box-shadow:  #2F4858 0px 5px 15px;
+}
+
+
+
+/* feature styling starts here */
+.feature
+{
+    padding: 15px 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.container1
+{
+   border: 2px solid gainsboro;
+    max-width: 95%;
+    max-height: 95%; 
+    object-fit: cover;
+    
+    
+}
+.outercontainer1
+{
+    background-color: white;
+    max-width: 100%;
+    min-height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    
+
+}
+
+    
+
+.background1
+{
+    width: 100%;
+    max-height: 250px;
+    min-height: 250px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.background1>img{
+    height: 100%;
+   
+    /* object-fit: cover; */
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+    align-items: center;
+    gap: 10px;
+    padding-inline:8px ;
+
+}
+
+.button1
+{
+    color: #2F4858;
+    text-decoration: none;
+    border: 2px solid #2F4858  ;
+    border-radius: 2px;
+    padding: 8px;
+    max-width: 50%;
+    border-radius: 4px;
+    
+}
+
+/* media query for feature section starts here */
+
+@media screen and (min-width:1000px) and (max-width:1245px) 
+{
+    .feature{
+        padding: 15px 8%;
+        
+        
+       }
+   
+    
+} 
+@media screen and (min-width:840px) and (max-width:1000px) 
+{
+    .feature{
+        padding: 15px 8%;
+        grid-template-columns: repeat(2,1fr);
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 2 span;
+    }  
+    .grid-span-1
+    {
+        grid-column: 1 span;
+        position: relative;
+        left: 200px;
+    } 
+    
+} 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+    .feature{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    .container1
+{
+    max-width: 95%;
+    max-height: 95%;
+    
+    
+}
+.outercontainer1
+{
+    max-width: 100%;
+    
+
+}
+
+    
+    
+    
+} 
+@media screen and (max-width:600px) 
+{
+    .feature{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        min-height: 80%;
+
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+} 
+
+
+
+/* Featuer styling starts here */
+
+
+
+
+/* products styling starts here */
+
+.products
+{
+    padding: 15px 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.container2
+{
+   border: 2px solid gainsboro;
+    width: 95%;
+    height: 95%; 
+    
+}
+.outercontainer2
+{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.background2
+{
+  width: 100%;
+
+    
+  
+}
+.background2>img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    
+
+}
+.card2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+    align-items: center;
+    gap: 10px;
+    padding-inline:8px ;
+
+}
+.card2>div>i{
+    color:orangered
+}
+
+.button2
+{
+    color: #2F4858;
+    text-decoration: none;
+    border: 2px solid #2F4858  ;
+    border-radius: 2px;
+    padding: 8px;
+    width: 50%;
+    border-radius: 4px;
+    
+}
+.success{
+    position: relative;
+    top: 200px;
+}
+.success>h1
+{
+    text-align: center;
+    background-color: white;
+    
+
+}
+.success>h1>img
+{
+    height: 40px;
+
+}
+
+
+/* Media query for product section */
+
+@media screen and (min-width:1000px) and (max-width:1245px) 
+{
+    .products{
+        padding: 15px;
+        
+        
+       }
+   
+    
+} 
+@media screen and (min-width:840px) and (max-width:1000px) 
+{
+    .products{
+        padding: 15px 8%;
+        grid-template-columns: repeat(2,1fr);
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 2 span;
+    }   
+    
+} 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+    .products{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+
+    
+    
+} 
+@media screen and (max-width:600px) 
+{
+    .products{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+} 
+
+/* styling of products section ends here */
+
+
+
+/* Styling of categories sectin starts here */
+.categories
+{
+    padding: 15px 10%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+.container3
+{
+   border: 2px solid gainsboro;
+    width: 95%;
+    height: 95%; 
+    
+}
+.outercontainer3
+{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.background3{
+    width: 100%;
+}
+
+.background3>img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+.card3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 50px;
+    align-items: center;
+    gap: 10px;
+    padding-inline:8px ;
+
+}
+.card3>div>i{
+    color: orangered;
+}
+
+.button3
+{
+    color: #2F4858;
+    text-decoration: none;
+    border: 2px solid #2F4858  ;
+    border-radius: 2px;
+    padding: 8px;
+    width: 50%;
+    border-radius: 4px;
+    
+}
+
+/* media query for categories section */
+@media screen and (min-width:1000px) and (max-width:1245px) 
+{
+    .categories{
+        padding: 10px 8%;
+        /* grid-gap: 50px; */
+       }
+   
+    
+} 
+@media screen and (min-width:840px) and (max-width:1000px) 
+{
+    .categories{
+        padding: 15px 8%;
+        grid-template-columns: repeat(2,1fr);
+        
+       }
+    .grid-span-4
+    {
+        grid-column: 2 span;
+    }   
+    
+} 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+    .categories{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-4
+    {
+        grid-column: 1 span;
+        
+    } 
+    
+    
+} 
+@media screen and (max-width:600px) 
+{
+    .categories{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-4
+    {
+        grid-column: 1 span;
+        display: flex;
+        flex-direction: column; 
+    } 
+    .grid-span-4>.shape
+    {
+        font-size: 24px;
+        font-weight: bold;
+
+    }
+   
+    
+} 
+/* Styling of categories ends here */
+
+
+
+/* Styling of review section starts here */
+.review
+{
+    padding: 15px 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.container4
+{
+   border: 2px solid gainsboro;
+    width: 95%;
+    height: 95%; 
+    
+}
+.outercontainer4
+{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.background4{
+    max-width:100% ;
+}
+
+.background4>img{
+    max-width: 35%;
+    max-height: 35%;
+    border-radius: 50%;
+    position: relative;
+    left: 35%;
+    padding: 16px;
+}
+.card4{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 40px;
+    align-items: center;
+    gap: 10px;
+    padding-inline:8px ;
+
+}
+.card4>div>i{
+    color: orangered;
+}
+
+.button4
+{
+    color: #2F4858;
+    text-decoration: none;
+    border: 2px solid #2F4858  ;
+    border-radius: 4px;
+    padding: 8px;
+    width: 50%;
+    
+}
+
+/* media query for review section */
+
+@media screen and (min-width:1000px) and (max-width:1245px) 
+{
+    .review{
+        padding: 15px 8%;
+        
+        
+       }
+   
+    
+} 
+@media screen and (min-width:840px) and (max-width:1000px) 
+{
+    .review{
+        padding: 15px 8%;
+        grid-template-columns: repeat(2,1fr);
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 2 span;
+    }   
+    .grid-span-1
+    {
+        grid-column: 1 span;
+        position: relative;
+        left: 200px;
+    }
+} 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+    .review{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+    
+} 
+@media screen and (max-width:600px) 
+{
+    .review{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+} 
+
+/* Styling of review sectinon ends here */
+
+
+
+
+
+/* Styling of blog section starts here */
+
+
+
+/* media query for blog section */
+
+/* Styling of blog section ends here */
+.Blog
+{
+    padding: 15px 10%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+}
+.container5
+{
+    width: 100%;
+    height: 100%; 
+    
+}
+.outercontainer5
+{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.background5
+{
+    width: 100%;
+}
+.background5>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
+
+}
+.card5{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 50px;
+    align-items: start;
+    gap: 16px;
+    padding-inline:16px ;
+    border-top: 2px solid #2f4858aa;
+    margin-inline: 14px;
+
+}
+.figurecaption
+{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 16px;
+    padding: 8px;
+
+    
+
+
+
+}
+.figurecaption>div>i
+{
+    color: orangered;
+}
+.button5
+{
+    color: #2F4858;
+    text-decoration: none;
+    border: 2px solid #2F4858  ;
+    border-radius: 4px;
+    padding: 8px;
+    width: 50%;
+    
+}
+@media screen and (min-width:1000px) and (max-width:1245px) 
+{
+    .Blog{
+        padding: 15px 8%;
+        
+        
+       }
+   
+    
+} 
+@media screen and (min-width:840px) and (max-width:1000px) 
+{
+    .Blog{
+        padding: 15px 8%;
+        grid-template-columns: repeat(2,1fr);
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 2 span;
+    }   
+    .grid-span-1
+    {
+        grid-column: 1 span;
+        position: relative;
+        left: 200px;
+    }
+
+} 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+    .Blog{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+    
+    
+} 
+@media screen and (max-width:600px) 
+{
+    .Blog{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+} 
+/* media query for feature section starts here */
+
+@media screen and (min-width:1000px) and (max-width:1245px) 
+{
+    .Blog{
+        padding: 15px 8%;
+        
+        
+       }
+   
+    
+} 
+@media screen and (min-width:840px) and (max-width:1000px) 
+{
+    .Blog{
+        padding: 15px 8%;
+        grid-template-columns: repeat(2,1fr);
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 2 span;
+    }  
+    .grid-span-1
+    {
+        grid-column: 1 span;
+        position: relative;
+        left: 200px;
+    } 
+    
+} 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+    .Blog{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+    
+    
+} 
+@media screen and (max-width:600px) 
+{
+    .Blog{
+        padding: 15px 20%;
+        grid-template-columns: 1fr;
+        
+       }
+    .grid-span-3
+    {
+        grid-column: 1 span;
+    } 
+    
+} 
+
+
+
+/* Featuer styling starts here */
+
+
+/* style of footer starts here */
+
+footer{
+    padding: 50px 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(0px,1fr));
+    min-width:800px;
+    column-gap: 20px;
+    height: max-content;
+    
+    
+
+}
+.rights
+{
+    grid-column: 4 span ;
+
+}
+.social
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.social>p{
+    width: 200px;
+}
+.social>div>i{
+    margin: 3px;
+    padding: 10px;
+    background-color: #2f485834;
+    border-radius: 5px;
+}
+.social>div>i:hover{
+    cursor: pointer;
+
+}
+.social>div>i:first-child:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 255);
+    color:white;
+
+}
+.social>div>i:nth-child(2):hover{
+    cursor: pointer;
+    background-color: rgb(0, 170, 255);
+    color:white;
+
+}
+.social>div>i:nth-child(3):hover{
+    cursor: pointer;
+    background: linear-gradient(#e66465, #9198e5);
+}
+.social>div>i:last-child:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: start;
+}
+
+.contact>h3{
+    color: blue;
+}
+.contact>div>i{
+    color: orangered;
+}
+
+
+
+
+
+
+.links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.links>h3{
+    color: blue;
+}
+
+.links>div>a{
+    
+    text-decoration: none;
+    color: gray;
+
+}
+.links>div{
+    
+    color: orangered;
+
+}
+.links>div>a:hover
+{
+    
+    color: black;
+    box-shadow: black;
+
+}
+
+
+.letter{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.letter>input
+{
+    max-width: 150px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: gainsboro;
+}
+.letter>h3{
+    color: blue;
+}
+
+
+
+
+/* media query of footer portion */
+ 
+@media screen and (min-width:600px) and (max-width:840px) 
+{
+   footer
+   {
+    justify-content: space-around;
+    row-gap: 50px;
+
+   }
+    
+} 
+@media screen and (max-width:600px) 
+{
+    footer
+    {
+    
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding-left: 50%;
+        align-items: self-start;
+        
+
+    }
+    
+    
+} 
+
+/*  Styling of footer portion ends here */
+
+
